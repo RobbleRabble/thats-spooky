@@ -6,16 +6,6 @@ html {
   height: 100%;
 }
 
-/* One section
-call it full-head
-ends where pics start
-
-top of section
-display flex
-flex-direction column
-height 100vh
-*/
-
 body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: #333;
@@ -29,7 +19,7 @@ body {
 .container {
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -38,10 +28,12 @@ body {
 }
 
 .header-section {
+  display: flex;
+}
+
+.header-section {
   padding-top: 30px;
   padding-bottom: 20px;
-  /* padding-right: 15px;
-  padding-left: 15px; */
   margin: 0;
   position: relative;
   box-sizing: border-box;
@@ -76,7 +68,6 @@ ul {
   min-height: 1px;
   padding-top: 7rem;
   padding-bottom: 7rem;
-  /* scroll-padding-top: 110px; */
 }
 
 .intro {
@@ -126,8 +117,8 @@ ul {
 
 .pictures {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
   justify-content: space-evenly;
@@ -172,7 +163,7 @@ ul {
 .spooky {
   display: block;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background-position: center center;
   position: relative;
   padding-bottom: 15px;
@@ -202,7 +193,6 @@ ul {
     color: #1cd9ff;
     margin-left: 15px;
     margin-right: 10px;
-
     margin: 0;
     padding-top: 20px;
   }
@@ -212,6 +202,14 @@ ul {
     margin-right: 0;
   }
 
+  .intro {
+    width: 100%;
+  }
+
+  .portfolio-filter {
+    width: 100%;
+  }
+
   .main-menu li {
     margin-right: 0.5rem;
     margin-left: 0.75rem;
@@ -219,6 +217,33 @@ ul {
 
   .container {
     /* max-width: 540px; */
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .spooky {
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pictures > ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 950px) {
+  .spooky {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .pictures > ul {
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
