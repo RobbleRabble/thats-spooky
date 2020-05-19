@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 100%;
-  padding-right: 15px;
+  /* padding-right: 15px; */
   /* padding-left: 15px; */
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +45,7 @@ body {
   font-size: 24px;
   padding-top: 20px;
   margin: 0;
+  width: 100%;
 }
 
 ul {
@@ -87,21 +88,22 @@ ul {
 
 .portfolio-section {
   display: flex;
+  width: 100%;
 }
 
 .portfolio-filter {
-  padding-bottom: 2rem;
   text-align: center;
   /* justify-content: space-evenly; */
   flex-wrap: wrap;
-  padding-bottom: 6.5rem;
+  /* padding-bottom: 6.5rem; */
+  width: 100%;
 }
 
 .portfolio-filter li {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   display: inline-block;
   font-size: 16px;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
   justify-content: space-evenly;
   color: #979797;
   cursor: pointer;
@@ -222,11 +224,7 @@ ul {
   }
 
   .spooky {
-    width: 350px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .pictures > ul {
@@ -237,7 +235,8 @@ ul {
 
 @media (min-width: 950px) {
   .spooky {
-    width: 450px;
+    width: 350px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
