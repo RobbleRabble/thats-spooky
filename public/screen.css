@@ -59,16 +59,21 @@ ul {
 }
 
 .text-section {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   font-weight: 600;
   font-family: 'Josefin Sans', sans-serif;
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  width: 100%;
   min-height: 1px;
   padding-top: 7rem;
   padding-bottom: 7rem;
+  border-style: solid;
+  border-color: whitesmoke;
+  background-color: black;
 }
 
 .intro {
@@ -169,6 +174,8 @@ ul {
   background-position: center center;
   position: relative;
   padding-bottom: 15px;
+  border-style: solid;
+  border-color: whitesmoke;
 }
 
 @media (min-width: 800px) {
